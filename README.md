@@ -1,7 +1,7 @@
 # challenge4roostify
 
 Test Suite Archetecture Guidlines: 
-(written by CG Acharjya for Roostify)
+(re written from an original by the same Author by CG Acharjya for Roostify)
 
 Under the test_suite folder is a folder with a suite_name folder.  
 Seems redundant but moose allows for multiple sub-suites/alternate suites etc.
@@ -32,7 +32,7 @@ This file also houses all your pointers to other elements so that we no longer h
 
 Each test case then gets listed in a yml for the test case suite, then the suite gets listed in a master yml that allows moose to run suites of tests or drill down and only run an individula case. It's been a while, but moose can run headless, run multithreaded (aka many suites or in multiple native browsers in the same space), and spit out the results and with a small command line trigger rerun all the failed tests cases only. There may be extra setup for that, the 8 months I've been away have my memory hazy. 
 
-Wile I want to make it simple as we only have/had an hour, understanding how to future prooof your tests and understanding the need for good archetecture and organization is key in a good SDIT/QAE/QAE Lead. For the purposes of this I'll only do one test and we can write it in native WATIR and discuss what needs testing, but ideally i'd like to follow this archetecture in the future (I belive it doesn't matter the framework as long as it supports true ruby and an actual arcitecture). This exact thing likely won't work for rspec test suites, and rspec doesn't really need it, though if we could only run rspec tests around what logically would be affected that would be ideal :-)
+Wile I want to make it simple as we only have/had an hour, understanding how to future proof your tests and understanding the need for good archetecture and organization is key in a good SDIT/QAE/QAE Lead. For the purposes of this I'll only do one test and we can write it in native WATIR and discuss what needs testing, but ideally i'd like to follow this archetecture in the future (I belive it doesn't matter the framework as long as it supports true ruby and an actual arcitecture). This exact thing likely won't work for rspec test suites, and rspec doesn't really need it, though if we could only run rspec tests around what logically would be affected that would be ideal :-)
 
 Some todo's: write new processes for angular etc.
 
